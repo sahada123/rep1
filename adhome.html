@@ -1,0 +1,143 @@
+{% extends 'adminindex.html'%}
+{% block body%}
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ main{
+            display:flex;
+        }article{
+             flex: 4;
+         }
+        aside{
+            flex: 1;
+            margin-left: 10px;
+            background-color: darkkhaki;
+        }
+</style>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="">
+                   <center> <h3 class="heading_section">ADMIN HOME</h3></center>
+<br>
+  <!--<table width="424" border="0">-->
+    <!--<tr>-->
+      <!--<th colspan="2" scope="row">Admin Home </th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th width="199" scope="row"><a href="mailto:">login</a></th>-->
+      <!--<td width="209" rowspan="6">&nbsp;</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/Add category">Add category</a></th>-->
+      <!--<input type="button" class="btn btn-info" onclick="location.href='/Add category'"  value="Input Button">-->
+
+    <!--</tr>-->
+     <!--<tr>-->
+      <!--<th scope="row"><a href="/manage_category">view category</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/choreographer">View and approve choreographer</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/View and approve college">View and approve college</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/View complaints and send reply">View complaints and send reply</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/View feedback">View feedback</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/View rating">View rating</a></th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row"><a href="/">logout</a></th>-->
+    <!--</tr>-->
+  <!--</table>-->
+<form>
+<main>
+     <ul>
+    <li class="nav-item">
+      <th scope="row"><a  class="nav-link" href="/Add category">Add category</a>
+      <!--<input type="button" class="btn btn-info" onclick="location.href='/Add category'"  value="Input Button">-->
+
+    </li >
+     <li class="nav-item">
+      <a  class="nav-link" href="/manage_category">view category</a>
+     </li>
+    <li class="nav-item">
+      <a  class="nav-link" href="/choreographer">View and approve choreographer</a>
+    </li>
+    <li class="nav-item">
+    <a  class="nav-link"  href="/View and approve college">View and approve college</a>
+    </li >
+    <li class="nav-item">
+      <a class="nav-link" href="/View complaints and send reply">View complaints and send reply</a>
+    </li>
+    <li class="nav-item">
+     <a  class="nav-link" href="/View feedback">View feedback</a>
+    </li>
+    <li class="nav-item">
+     <a  class="nav-link" href="/View_rating">View rating</a>
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link" href="/">logout</a>
+    </li>
+   </ul>
+     <video  autoplay="autoplay" width="1010" height="500">
+        <source src="./static/imgs/admin.mp4 "  video="web/mp4" >
+               </video>
+
+       <!--</main>-->
+    <!--<ul>-->
+        <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/view category">VIEW CATEGORY</a>-->
+                     <!--</li>-->
+                     <!--&lt;!&ndash;<li class="nav-item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<a class="nav-link" href="/pub_view_choreo_booking_responce">VIEW BOOKING STATUS</a>&ndash;&gt;-->
+                     <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                     <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/pub_view_costume">REQUEST FOR COSTUMES</a>-->
+                     <!--</li>-->
+                      <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/view_costume_responce">VIEW COSTUME BOOKING STATUS</a>-->
+                     <!--</li>-->
+                      <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/request_troupe">REQUEST FOR TROUPE </a>-->
+                     <!--</li>-->
+                      <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/view_troupe_responce">VIEW TROUPE BOOKING STATUS</a>-->
+                     <!--</li>-->
+                     <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="/dummy">SEND FEEDBACK </a>-->
+                     <!--</li>-->
+                     <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#trainings">SEND COMPLAINT</a>-->
+                     <!--</li>-->
+<!--</ul>-->
+
+</form>
+<br><br><br><br><br><br><br><br><br><br>
+</body>
+<!--</html>-->
+{% endblock %}

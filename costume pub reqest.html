@@ -1,0 +1,73 @@
+
+{% extends 'collegeindex.html'%}
+{% block body%}
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(document).ready(function(){
+    var dtToday = new Date();
+
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+
+    var minDate= year + '-' + month + '-' + day;
+
+    $('#txtDate').attr('min', minDate);
+});
+</script>
+<body>
+<form id="form1" name="form1" method="post" action="get_tote_costumel">
+  <center>
+
+       <center>  <h4>Public Details</h4></center>
+
+  <table width="300" border="0">
+
+         <tr>
+         <th scope="row">Days</th>
+      <td><label>
+        <input type="text" name="textfield5" required value="{{day}}" /><td>
+     </td>
+  </tr>
+      </label></td>
+    </tr>
+<td><input type="submit" name="totel" value="get totel" /></td>
+    <td>  <input type="text" name="name" value="{{tot}}" />
+
+      </td>
+      </tr>
+  </table>
+
+
+</form>
+
+<form id="form2" name="form2" method="post" action="request_costume1_send">
+     <table>
+      <tr>
+      <th scope="row">Date</th>
+      <td><label>
+        <input type="date" name="textfield8" id="txtDate" required />
+      </label></td>
+    </tr>
+
+  </table>
+
+
+
+    <br>
+     <input type="submit" name="Submit" value="Submit" />
+  </center>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

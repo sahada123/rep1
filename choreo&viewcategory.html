@@ -1,0 +1,33 @@
+{% extends 'choreoindex.html'%}
+{% block body%}
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+
+<body>
+<form id="form1" name="form1" method="post" action="/view_and_book_choreographer">
+  <table width="679" border="1">
+    <tr>
+      <th width="144" scope="row"><strong>Choreographer name </strong></th>
+      <td width="144"><strong>Contact</strong></td>
+      <!--<td width="144"><strong>Schedule</strong></td>-->
+      <td width="144"><strong>Email</strong></td>
+      <td width="69">&nbsp;</td>
+    </tr>
+   {% for i in val %}
+    <tr>
+      <th scope="row">{{i[3]}} {{i[4]}}</th>
+      <td>{{i[8]}}</td>
+      <!--<td>{{i[3]}}</td>-->
+      <td>{{i[9]}}</td>
+      <td><a href="/view_category_for_event?id={{i[0]}}">View category</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}
